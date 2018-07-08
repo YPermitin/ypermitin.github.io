@@ -43,9 +43,15 @@ SELECT GETDATE() AS "CurrentDate"
 ```
 
 ```bsl
-require 'redcarpet'
-markdown = Redcarpet.new("Возврат "Тест ОК";")
-puts markdown.to_html
+Функция ТестПодстветки() Экспорт
+
+    #НачалоОбласти Обл
+
+    Возврат "Все ОК";
+
+    #КонецОбласти
+
+КонецФункции
 ```
 
 Еще в разработке...
