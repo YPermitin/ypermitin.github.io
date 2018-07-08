@@ -1,57 +1,84 @@
 ---
 layout: post
-title: Файловые группы MS SQL Server и 1С:Предприятие
+title: Файловые группы MS SQL Server и 1С:Предприятие 8.x
 categories: [SQL Server, 1C]
 ---
 
-Тест подсветки кода:
+# О чем речь
+## Что такое файловые группы
+## Особенности для баз 1С:Предприятия
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+# Исходные данные
+Все дальнейшие примеры будет выполнять на SQL-базе "JustDoIt", сформированной платформой 1С для простой конфигурации.
 
-```cs
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace V8LoggerConsoleApp
-{
-    public partial class el_Events
-    {
-        public long InformationSystem { get; set; }
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long Code { get; set; }
-        [MaxLength(150)]
-        public string Name { get; set; }
-    }
-}
-
-```
-
-```js
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
+# Реализация
+Все действия мы будем выполнять через скрипты без использования пользовательского интерфейса. Этот подход предпочтительнее, т.к. позволяет выполнять действия под большим контролем и с расширенными возможностями. Никто Вам не запрещает использовать интерфейс SQL Managment Studio :)
+## Создание файловой группы
+Это самый простой шаг. Создадим файловую группу "SECONDARY" для нашей тестовой базы.
 
 ```sql
-SELECT GETDATE() AS "CurrentDate"
+USE [master]
+GO
+ALTER DATABASE [JustDoIt] ADD FILEGROUP [SECONDARY]
+GO
 ```
 
-```bsl
-Функция ТестПодстветки() Экспорт
+## Добавление нового файла
+Далее добавим новый файл базы с принадлежностью к новой файловой группе.
 
-    #НачалоОбласти Обл
-
-    Возврат "Все ОК";
-
-    #КонецОбласти
-
-КонецФункции
+```sql
+USE [master]
+GO
+ALTER DATABASE [JustDoIt] ADD FILE ( 
+    -- Имя файла
+	NAME = N'JustDoIt_Additional', 
+    -- Путь к файлу
+	FILENAME = N'D:\DBs\JustDoIt_Additional.mdf' , 
+    -- Начальный размер файла
+	SIZE = 50000000KB,
+    -- Автоприращения файла при увеличении размера данных
+	FILEGROWTH = 100000KB ) 
+TO FILEGROUP [SECONDARY]
+GO
 ```
+
+## Перемещение таблицы в файловую группу
+### Обычные таблицы
+### Таблицы с BLOB'ами
+## Уменьшение размера основyого файла
+Для уменьшение размера основного файла данных нужно выполнить операцию "SHRINKDATABASE". На рабочем окружении обычно такие операции не выполняются, т.к. могут привести к деградации производительности. Поэтому нужно использовать ее с осторожностью и только при крайней необходимости.
+
+```sql
+USE [JustDoIt]
+GO
+DBCC SHRINKDATABASE(N'JustDoIt')
+GO
+```
+
+# Особенности сопровождения
+## Просмотр файловых групп
+Для просмотра списка объектов и их принадлежности к определенным файловым группам можно использовать скрипт ниже.
+```sql
+SELECT 
+    o.[name] AS "Table",
+    o.[type] AS "Type", 
+    i.[name] AS "ObjectName", 
+    i.[index_id] AS "IndexID", 
+    f.[name] AS "FileGroupName"
+FROM sys.indexes i
+    INNER JOIN sys.filegroups f
+    ON i.data_space_id = f.data_space_id
+    INNER JOIN sys.all_objects o
+    ON i.[object_id] = o.[object_id] 
+WHERE i.data_space_id = f.data_space_id
+    -- Only user created tables
+    AND o.type = 'U'
+```
+
+## Внимание, реструктуризация!
+## Бэкап! Бэкап!
+## Нарушение лицензии
+
+# Стоит ли оно того?
 
 Еще в разработке...
