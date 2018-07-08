@@ -22,12 +22,14 @@ function test() {
 SELECT GETDATE() AS "CurrentDate"
 ```
 
-```
-Функция Тест()
+```1C Enterprise
+require 'redcarpet'
+markdown = Redcarpet.new("Функция Тест()
 
     Возврат "Тест ОК";
 
-КонецФункции
+КонецФункции")
+puts markdown.to_html
 ```
 
 Еще в разработке...
