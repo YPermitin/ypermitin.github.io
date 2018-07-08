@@ -32,13 +32,13 @@ namespace V8LoggerConsoleApp
 
 ```
 
-```
+```js
 function test() {
   console.log("notice the blank line before this function?");
 }
 ```
 
-```
+```sql
 SELECT GETDATE() AS "CurrentDate"
 ```
 
