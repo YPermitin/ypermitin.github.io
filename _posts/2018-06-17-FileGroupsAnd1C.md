@@ -13,9 +13,23 @@ puts markdown.to_html
 ```
 
 ```C#
-require 'redcarpet'
-markdown = Redcarpet.new("using System.Data;")
-puts markdown.to_html
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace V8LoggerConsoleApp
+{
+    public partial class el_Events
+    {
+        public long InformationSystem { get; set; }
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public long Code { get; set; }
+        [MaxLength(150)]
+        public string Name { get; set; }
+    }
+}
+
 ```
 
 ```
