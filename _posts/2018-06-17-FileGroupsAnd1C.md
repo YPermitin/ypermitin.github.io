@@ -6,6 +6,12 @@ categories: [SQL Server, 1C]
 
 Тест подсветки кода:
 
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
 ```
 function test() {
   console.log("notice the blank line before this function?");
