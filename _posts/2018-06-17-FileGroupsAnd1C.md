@@ -24,11 +24,7 @@ SELECT GETDATE() AS "CurrentDate"
 
 ```1C Enterprise
 require 'redcarpet'
-markdown = Redcarpet.new("Функция Тест()
-
-    Возврат "Тест ОК";
-
-КонецФункции")
+markdown = Redcarpet.new("Возврат "Тест ОК";")
 puts markdown.to_html
 ```
 
