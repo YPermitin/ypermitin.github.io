@@ -12,7 +12,7 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
-```
+```cs
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -42,7 +42,7 @@ function test() {
 SELECT GETDATE() AS "CurrentDate"
 ```
 
-```1C Enterprise
+```bsl
 require 'redcarpet'
 markdown = Redcarpet.new("Возврат "Тест ОК";")
 puts markdown.to_html
