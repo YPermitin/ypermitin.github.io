@@ -12,7 +12,7 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
-```C#
+```
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
