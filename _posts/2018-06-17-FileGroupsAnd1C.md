@@ -305,8 +305,9 @@ COMMIT
 
 ```sql
 USE [JustDoIt]
-
-DBCC SHRINKDATABASE(N'JustDoIt')
+GO
+DBCC SHRINKFILE (N'JustDoIt' , 1000)
+GO
 ```
 
 После этой операции основной файл данных уменьшится на общий размер данных таблиц и индексов, которые были перемещены в другую файловую группу.
