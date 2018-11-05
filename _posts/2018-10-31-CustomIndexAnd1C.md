@@ -399,7 +399,10 @@ AFTER CREATE_TABLE
 AS
 
 BEGIN
-	SET NOCOUNT ON
+	SET NOCOUNT ON;
+
+	-- В случае возникновения ошибок продолжаем работу
+	SET XACT_ABORT OFF;
 
 	DECLARE @SchemaName SYSNAME,
 		@TableName SYSNAME,
@@ -412,6 +415,9 @@ BEGIN
 
 	-- Здесь запускаем скрипт создания индекса 
 	-- с учетом параметров @TableName, @SchemaName, @DatabaseName
+
+	-- Возвращаем значение по умолчанию для ситуаций с ошибками в транзакции
+  	SET XACT_ABORT ON;
 
 END
 ```
