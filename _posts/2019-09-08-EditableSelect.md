@@ -4,7 +4,7 @@ title: Редактируемый SELECT
 categories: [JavaScript, JQuery]
 ---
 
-Это простой пример редактируемого элемента <SELECT>, для реализации которого используется JavaScript-библиотека [JQuery](https://ru.wikipedia.org/wiki/JQuery).
+Это простой пример редактируемого элемента SELECT, для реализации которого используется JavaScript-библиотека [JQuery](https://ru.wikipedia.org/wiki/JQuery).
 
 ## Что это?
 
