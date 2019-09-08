@@ -4,6 +4,8 @@ title: Редактируемый SELECT
 categories: [JavaScript, JQuery]
 ---
 
+<script id="jquery-js" src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
 Это простой пример редактируемого элемента SELECT, для реализации которого используется JavaScript-библиотека [JQuery](https://ru.wikipedia.org/wiki/JQuery).
 
 ## Что это?
@@ -65,5 +67,5 @@ categories: [JavaScript, JQuery]
 <script>
         $(function () {
             $("#OriginalSelect").editableSelect();
-        });
+        })
 </script>
