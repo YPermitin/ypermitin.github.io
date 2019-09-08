@@ -64,8 +64,5 @@ categories: [JavaScript, JQuery]
 
 ## Реализация
 
-<script>
-        $(function () {
-            $("#OriginalSelect").editableSelect();
-        })
-</script>
+<script id="editable-select" src="/scripts/201909/2019-09-08-EditableSelect.js" type="text/javascript"></script>
+<script id="editable-select" src="/scripts/201909/editable.select.js" type="text/javascript"></script>
