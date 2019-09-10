@@ -6,7 +6,7 @@ categories: [JavaScript, JQuery]
 
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.js"></script>
-<link href="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css" rel="sty
+<link href="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css" rel="style">
 
 Это простой пример редактируемого элемента SELECT, для реализации которого используется JavaScript-библиотека [JQuery](https://ru.wikipedia.org/wiki/JQuery).
 
