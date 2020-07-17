@@ -2,95 +2,55 @@
 layout: mainPage
 ---
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                <rect width="100%" height="100%" fill="#777"></rect>
-            </svg>
-            <div class="container">
-                <div class="carousel-caption text-left">
-                    <h1>Мои разработки и проекты</h1>
-                    <p>Различные разработки и проекты, над которыми я работал и работаю (над некоторыми) и сейчас.</p>
-                    <p><a class="btn btn-lg btn-primary" href="https://github.com/YPermitin" target="_blank" role="button">Перейти на GitHub</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                <rect width="100%" height="100%" fill="#777"></rect>
-            </svg>
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Мой небольшой блог</h1>
-                    <p>Мой небольшой блог по разработке, администрированию и другим IT-интересностям.</p>
-                    <p><a class="btn btn-lg btn-primary" href="/blog" role="button">Читать, читать, читать...</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                <rect width="100%" height="100%" fill="#777"></rect>
-            </svg>
-            <div class="container">
-                <div class="carousel-caption text-right">
-                    <h1>Все о разработке на 1С</h1>
-                    <p>Мои материалы по разработке на платформе 1С, а также администрированию, внутренностях ее работы и многое другое.</p>
-                    <p><a class="btn btn-lg btn-primary" href="https://infostart.ru/profile/225415/" role="button" target="_blank">Вперед на Инфостарт!</a></p>
-                </div>
-            </div>
+<main role="main">
+        
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Тихое место</h1>
+            <p>
+                Разработка ПО - мое хобби и профессия. Здесь собраны интересные мне материалы по разработке и администрированию.
+            </p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="/blog">Последние публикации »</a>
+            </p>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-
-    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Библиотеки и приложения на .NET</h2>
-        <p class="lead">Мощь платформы .NET в полезных библиотеках и приложениях.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Мой путь .NET</h2>
+                <p>Все, что связано с разработкой на платформе .NET. От настольных и веб-приложений до библиотек, сервисов и др.</p>
+                <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Разработка баз данных</h2>
+                <p>Разработка баз данных и все что с ними связано. SQL Server, PostgreSQL и др.</p>
+                <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Администрирование</h2>
+                <p>Администрирование и сопровождение различных информационных систем и ПО, мониторинг и т.д.</p>
+                <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Фронт</h2>
+                <p>Немного о фронтендовой разработке. Немного потому что это не мое :)</p>
+                <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>"Желтая" платформа</h2>
+                <p>Об отечественной бизнес-платформе 1С:Предприятие и все что с этим связано. Разработка, сопровождение и другие интересности.</p>
+                <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Великий C++</h2>
+                <p>Великий и ужасный C++. Совсем немного.</p>
+                <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+            </div>
+        </div>
     </div>
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Разработка баз данных</h2>
-        <p class="lead">SQL Server, PostgreSQL и связанные темы. Разработка и администрирование.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-  
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">За пределами</h2>
-        <p class="lead">Все, что не входит в основные категории публикаций блога и разделов сайта.</p>
-      </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-    <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">"Желтая" платформа</h2>
-        <p class="lead">Все, что связано с разработкой на платформе 1С. Блог, готовые разработки и другое.</p>
-      </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-    </div>
-  </div>
-</div>
+            <hr>
+        </main>
