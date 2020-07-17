@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Обо мне
+title: Немного обо мне
 permalink: /about/
 ---
-
-# Немного обо мне
 
 Программирование для меня и хобби и работа. Работа в основном связана с разработкой на [платформе 1С:Предприятие](https://1c.ru/), администрированием [Microsoft SQL Server](https://www.microsoft.com/ru-ru/sql-server/sql-server-2019) и [PostgreSQL](https://www.postgresql.org/), а также решением проблем стабильности и производительности.
 
@@ -23,9 +21,9 @@ permalink: /about/
 
 Участвую в OpenSource-проекта:
 
-* [xUnitFor1C](https://github.com/xDrivenDevelopment/xUnitFor1C/commits?author=YPermitin) - набор инструментов для выполнения тестирования (модульного/юнит, приемочного, сценарного для 1С 8.3, интеграционного) в 1С:Предприятие 8.
 * [YY.EventLogReaderAssistant](https://github.com/YPermitin/YY.EventLogReaderAssistant) - библиотека для чтения файлов журнала регистрации платформы 1С:Предприятие 8.x
 * [YY.EventLogExportAssistant](https://github.com/YPermitin/YY.EventLogExportAssistant) - решение для экспорта данных журнала регистрации платформы 1С:Предприятие 8.x в нестандартные хранилища данных (SQL Server, PostgreSQL, ElasticSearch).
+* [xUnitFor1C](https://github.com/xDrivenDevelopment/xUnitFor1C/commits?author=YPermitin) - набор инструментов для выполнения тестирования (модульного/юнит, приемочного, сценарного для 1С 8.3, интеграционного) в 1С:Предприятие 8.
 
 С другими проектами и репозиториями Вы можете ознакомиться на [GitHub](https://github.com/YPermitin).
 
