@@ -25,42 +25,46 @@ layout: default
 
   <div class="container">
     <div class="row">
+        <div class="col-md-4">
+            <h2>Мой путь .NET</h2>
+            <p>Все, что связано с разработкой на платформе .NET. От настольных и веб-приложений до библиотек, сервисов и др.</p>
+            <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Разработка баз данных</h2>
+            <p>Разработка баз данных и все что с ними связано. SQL Server, PostgreSQL и др.</p>
+            <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Администрирование</h2>
+            <p>Администрирование и сопровождение различных информационных систем и ПО, мониторинг и т.д.</p>
+            <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Фронт</h2>
+            <p>Немного о фронтендовой разработке. Немного потому что это не мое :)</p>
+            <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>"Желтая" платформа</h2>
+            <p>Об отечественной бизнес-платформе 1С:Предприятие и все что с этим связано. Разработка, сопровождение и другие интересности.</p>
+            <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Великий C++</h2>
+            <p>Великий и ужасный C++. Совсем немного.</p>
+            <p><a class="btn btn-primary" href="#">Перейти »</a></p>
+        </div>
+    </div>
+
+  <!-- <div class="container">
+    <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
         {{ content }}
 
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
-
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
-          </p>
-        </article>
-
-        <hr>
-
-        {% endfor %}
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
-
       </div>
     </div>
-  </div>
+  </div> -->
