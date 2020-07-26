@@ -1,0 +1,104 @@
+---
+title: Раскраска синтаксиса 1С
+description: Раскраска кода встроенного языка 1С с помощью SyntaxHighlighter
+permalink: /online-instruments/syntax-highlighter-1C
+background: '/img/bg-post.jpg'
+---
+
+{% include head.html %}
+
+{% include navbar.html %}
+
+<!-- SyntaxHighlighter for 1C -->
+<script src="/assets/YPermitin/Scripts/SyntaxHighlighter/shCore.js"></script>
+<script src="/assets/YPermitin/Scripts/SyntaxHighlighter/shBrushOce.js"></script>
+<link href="/assets/YPermitin/Content/SyntaxHighlighter/shCoreDefault.css" rel="stylesheet" />
+<link href="/assets/YPermitin/Content/SyntaxHighlighter/shThemeOce.css" rel="stylesheet" />
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Раскраска синтаксиса 1С</h1>
+            <span class="subheading">Раскраска кода встроенного языка 1С с помощью SyntaxHighlighter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <h2>Раскраска языка 1С</h2>
+
+  <div style="margin: 15px;">   
+
+    <hr/>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="sourceCodeWrapper" class="well">
+          <textarea id="sourceCode" class="form-control" rows="10" placeholder="Сообщить('Привет Мир\');"
+            style="min-width: 100%"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="highlightResult" class="well">
+          <pre id="HighlightCode" class="brush: oce">Сообщить("Привет Мир!");</pre>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h2>SyntaxHighlighter</h2>
+        <p>
+          Базируется на разработке <a href="https://github.com/alexgorbatchev" target="_blank">Александра Горбачева</a> - <a href="https://github.com/syntaxhighlighter/syntaxhighlighter" target="_blank">SyntaxHighlighter</a>
+          Это клиентское приложение на JavaScript для веб-страниц и веб-приложений.
+        </p>
+        <p><a class="btn btn-info" target="_blank"
+            href="https://github.com/syntaxhighlighter/syntaxhighlighter">Узнать больше &raquo;</a></p>
+      </div>
+
+      <div class="col-md-4">
+        <h2>Поддержка синтаксиса 1С</h2>
+        <p>
+          Для поддержки синтаксиса встроенного языка 1С мной были созданы  
+          <a href="https://github.com/YPermitin/Brush-and-theme-of-1C-Enterprise-for-SyntaxHighlighter" target="_blank">темы и кисти</a>, 
+          чтобы в веб-приложениях раскраска кода отечественной бизнес-платформы была теперь не сложной задачей.
+        </p>
+        <p><a class="btn btn-info" target="_blank" href="https://github.com/1c-syntax">Узнать больше &raquo;</a></p>
+      </div>
+
+      <div class="col-md-4">
+        <h2>Больше про раскраску синтаксиса</h2>
+        <p>
+          Сообщество приложило руку к другим шикарным разработкам для работы с синтаксисом кода встроенного языка 1С.
+          Посетите группу <a href="https://github.com/1c-syntax" target="_blank">1c-syntax</a>, чтобы узнать больше.
+        </p>
+        <p><a class="btn btn-info" target="_blank" href="https://github.com/1c-syntax">Узнать больше &raquo;</a></p>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+
+{% include footer.html %}
+
+{% include scripts.html %}
+
+<script src="/assets/YPermitin/Scripts/SyntaxHighlighter1CApp.js"></script>
+
+{% include google-analytics.html %}
+
