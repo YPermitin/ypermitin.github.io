@@ -18,10 +18,6 @@ google_analytics:   UA-38629049-5 # out your google-analytics code
 # Build settings
 highlighter:        rouge
 markdown:           kramdown
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-  extensions: fenced_code_blocks
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:
