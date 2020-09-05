@@ -16,7 +16,8 @@ linkedin_username:
 google_analytics:   UA-38629049-5 # out your google-analytics code
 
 # Build settings
-markdown:           kramdown
+markdown:           rouge 
+#markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:
