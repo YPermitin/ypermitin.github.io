@@ -17,12 +17,8 @@ google_analytics:   UA-38629049-5 # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
-highlighter:        rouge
 paginate:           5
 paginate_path:      "/posts/page:num/"
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-paginate

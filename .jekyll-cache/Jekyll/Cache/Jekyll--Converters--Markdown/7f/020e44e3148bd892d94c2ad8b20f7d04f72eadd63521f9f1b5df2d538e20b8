@@ -1,13 +1,8 @@
----
-layout: post
-title: Здесь будут статьи по .NET
-categories: dotNetPath
----
-
-В категории "Мой путь .NET" будут публикации по .NET, C# и связанных темах.
+I"<p>В категории “Мой путь .NET” будут публикации по .NET, C# и связанных темах.</p>
 
 <pre>
     <code class="C#">
+C#
 using System;
 
 namespace HelloWorld
@@ -22,3 +17,4 @@ namespace HelloWorld
 }
     </code>
 </pre>
+:ET
