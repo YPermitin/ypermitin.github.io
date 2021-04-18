@@ -295,7 +295,6 @@ netsh advfirewall firewall add rule name="Open Zabbix agentd port 10050 outbound
 ```powershell
 # Устанавливаем агента как службу и запускаем
 
-```powershell
 zabbix_agentd.exe --config zabbix_agentd.conf --install
 zabbix_agentd.exe --start
 
@@ -313,7 +312,7 @@ Get-Service *zabbix*
 
 Вот такой небольшой мануал получился. В следующих статьях мы коснемся уже более интересных тем:
 
-* •	Первоначальная настройка групп узлов и прав доступа
+* Первоначальная настройка групп узлов и прав доступа
 * Оптимизация настроек Zabbix-сервера
 * Создание своего шаблона сбора метрик
 * Настройка уведомлений о событиях в Telegram-канал
