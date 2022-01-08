@@ -2,7 +2,7 @@
 layout: post
 title: Использование TimescaleDB для Zabbix
 categories: devOooops
-background: '/img/posts/2022/2022-01-08-%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+TimescaleDB+%D0%B4%D0%BB%D1%8F+Zabbix.png'
+background: '/img/posts/2022/2022-01-08-Использование%20TimescaleDB%20для%20Zabbix/logo.png'
 ---
 
 Применение TimescaleDB для базы Zabbix на PostgreSQL.
