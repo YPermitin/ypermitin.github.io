@@ -29,4 +29,4 @@ permalink: /about/
 
 ### Хотите знать больше?
 
-Связаться со мной можно по [email](mailto:i.need.ypermitin@yandex.ru).
+Связаться со мной можно по [email](mailto:i.need.ypermitin@yandex.ru), а новости по проектам или новым материалам в [Telegram-канале](https://t.me/TinyDevVault).
