@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Простая инструкция установки Zabbix (Ubuntu + PostgreSQL + Apache)
-categories: devOooops, zabbix
+categories: devOooops
 background: '/img/posts/2021/2021-04-20-Простая%20инструкция%20установки%20Zabbix%20(Ubuntu%20+%20PostgreSQL%20+%20Apache)/logo.png'
 ---
 

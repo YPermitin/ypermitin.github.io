@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Использование TimescaleDB для Zabbix
-categories: devOooops, postgresql
+categories: devOooops
 background: '/img/posts/2022/2022-01-08-Использование%20TimescaleDB%20для%20Zabbix/logo.png'
 ---
 
