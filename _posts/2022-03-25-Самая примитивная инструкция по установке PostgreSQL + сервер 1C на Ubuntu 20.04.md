@@ -22,7 +22,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-### [Настройка локали](https://gist.github.com/YPermitin/b66dafe2a954188c04111e9c0e692026)
+### [Настройка локали](https://ypermitin.github.io/devoooops/2022/03/05/Настройка-локализации-в-Ubuntu-20.04.html)
 
 Чтобы платформа 1С могла работать с базой данных PostgreSQL нужно, чтобы в системе были установлены необходимые локали.
 
