@@ -6,31 +6,27 @@ permalink: /about/
 
 Мое имя Пермитин Юрий. И я разработчик.
 
-Программирование для меня и хобби и работа. Работа в основном связана с разработкой на [платформе 1С:Предприятие](https://1c.ru/), созданию приложений, библиотек и сервисов на платформе .NET, администрированием [Microsoft SQL Server](https://www.microsoft.com/ru-ru/sql-server/sql-server-2019) и [PostgreSQL](https://www.postgresql.org/), а также решением проблем стабильности и производительности информационных систем.
+Программирование для меня и хобби и работа. Основные направления моей деятельности:
 
-Высокая вовлеченность в поставленные задачи считаю самым важным своим качеством.
-Мне нравится изучать внутреннее устройство того, с чем я работаю. Это одновременно делает мои навыки разработки и решения бизнес-задач более развитыми. В работе достаточно быстро разбирался с вопросами предметной области (торговля, производство, учет и отчетность и многое другое).
+* Разработка на платформе .NET. Создание различных приложений, библиотек и сервисов, а также GUI-приложений (WinForms, Blazor, WPF).
+* Администрирование и DevOps в части работы Microsoft SQL Server, PostgreSQL, ClickHouse, контроль производительности .NET приложений, а также решение проблем работы платформы 1С:Предприятие. Автоматизация различных задач на скриптах PowerShell и Python. Все это для решения проблем стабильности и производительности информацинных систем.
+* Организация мониторинга инфраструкуры и показателей информационынх систем и платформ в частности на базе Zabbix / Prometheus / Grafana.
+* Решение задач в части регистрации изменений и участие в организации ETL-процессов (SQL Server Change Data Capture, Apache Kafra и др).
+* Разработка на платформе 1C для решения бизнес-задач.
 
-Краткий список того, что изучал и использовал на практике:
+### **Немного моих проектов**:
 
-* [Microsoft SQL Server](https://www.microsoft.com/ru-ru/sql-server/sql-server-2019)
-* [PostgreSQL](https://www.postgresql.org/)
-* [Microsoft .NET](https://dotnet.microsoft.com/) - как .NET Framework, так и .NET Core (C#). Использовал для создания некоторых сервисов и веб-приложений, библиотек.
-* Linux (в основном работал с дистрибутивом CentOS)
-* Web (JavaScript, HTML, CSS и др.) на базовом уровне.
-* GIT, использую его в повседневной работе.
-* TDD и BDD, имею практический опыт написания тестов.
+* ⚡ [SQLServerTools](https://github.com/YPermitin/SQLServerTools) & [PGTools](https://github.com/YPermitin/PGTools) & [ClickHouseTools](https://github.com/YPermitin/ClickHouseTools) - набор скриптов, инструментов и других полезных материалов по SQL Server, PostgreSQL и ClickHouse.
+* ⚡ [PowerShellTools](https://github.com/YPermitin/PowerShellTools) - небольшой репозиторий с полезными скриптами и материалами по PowerShell.
+* ⚡ [TinyDevTools](https://github.com/YPermitin/YPermitin.TinyDevTools) - небольшое Web-приложение на базе Blazor с различными инструментами для разработчика и некоторыми результатами экспериментов в разработке.
+* ⚡ [FIASToolSet](https://github.com/YPermitin/YPermitin.FIASToolSet) - набор инструментов, утилит и библиотек для работы с ФИАС.
+* ⚡ [Zabbix-template-for-Microsoft-SQL-Server-Analysis-Services](https://github.com/YPermitin/Zabbix-template-for-Microsoft-SQL-Server-Analysis-Services) - шаблон Zabbix для Microsoft SQL Server Analysis Services со сбором показателей производитлеьности.
+* ⚡ [YY.DBTools](https://github.com/YPermitin/YY.DBTools) - утилиты для различных СУБД (мониторинг, диагностика и другие задачи).
 
-Участвую в OpenSource-проекта:
-
-* [YY.EventLogReaderAssistant](https://github.com/YPermitin/YY.EventLogReaderAssistant) - библиотека для чтения файлов журнала регистрации платформы 1С:Предприятие 8.x
-* [YY.EventLogExportAssistant](https://github.com/YPermitin/YY.EventLogExportAssistant) - решение для экспорта данных журнала регистрации платформы 1С:Предприятие 8.x в нестандартные хранилища данных (SQL Server, PostgreSQL, ElasticSearch).
-* [xUnitFor1C](https://github.com/xDrivenDevelopment/xUnitFor1C/commits?author=YPermitin) - набор инструментов для выполнения тестирования (модульного/юнит, приемочного, сценарного для 1С 8.3, интеграционного) в 1С:Предприятие 8.
+Высокою вовлеченность в поставленные задачи считаю самым важным своим качеством. Мне нравится изучать внутреннее устройство того, с чем я работаю. Это одновременно делает мои навыки разработки и решения бизнес-задач более эффективными. В работе достаточно быстро разбирался с вопросами предметной области (торговля, производство, учет и отчетность и многое другое).
 
 С другими проектами и репозиториями Вы можете ознакомиться на [GitHub](https://github.com/YPermitin).
 
-Активный участник сообщества [Инфостарт](https://infostart.ru/profile/225415).
-
 ### Хотите знать больше?
 
-[Напишите мне на этой странице](/contact) или на электронную почту (см. в подвале страницы).
+Связаться со мной можно по [email](mailto:i.need.ypermitin@yandex.ru).
